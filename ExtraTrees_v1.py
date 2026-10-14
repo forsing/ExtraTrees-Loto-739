@@ -18,9 +18,9 @@ from sklearn.ensemble import ExtraTreesRegressor
 
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4702_k82.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4702_k82_loto_2973.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4702_k82_loto_plus_1729.csv",
+    "/data/loto7_4702_k82.csv",
+    "/data/loto7_4702_k82_loto_2973.csv",
+    "/data/loto7_4702_k82_loto_plus_1729.csv",
 )
 
 SEED = 42
@@ -545,7 +545,7 @@ ExtraTreesRegressor: 1000 stabala; dubina=15; seme=42.
 Random samo u stablima. Izbor kombinacije je deterministicki.
 Bez nametnutih filtera oblika kombinacije.
 
-/Users/4c/Desktop/GHQ/data/loto7_4702_k82.csv
+/data/loto7_4702_k82.csv
 Redova: 4702; poslednja: 8,10,13,21,22,23,32
 Validacija 1: 1.3542
 Validacija 2: 1.3125
@@ -557,11 +557,13 @@ Distribucija pogodaka 0..7: [10, 29, 19, 6, 0, 0, 0, 0]
 Razlicitih test predikcija: 64/64
 Istorijska ponavljanja u testu: 0/64
 Najduzi niz: 3; niz 5+: 0; dve zbijene polovine (opis, bez filtera): 1
-NEXT red 4703: 8,13,25,33,34,35,39
+NEXT red 4703: 8,x,25,y,34,z,39
 NEXT vec postoji u istoriji: False
 NEXT najduzi uzastopni niz: 3
 
-/Users/4c/Desktop/GHQ/data/loto7_4702_k82_loto_2973.csv
+
+
+/data/loto7_4702_k82_loto_2973.csv
 Redova: 2973; poslednja: 1,2,8,26,29,35,39
 Validacija 1: 1.1042
 Validacija 2: 1.1250
@@ -573,12 +575,14 @@ Distribucija pogodaka 0..7: [14, 27, 18, 5, 0, 0, 0, 0]
 Razlicitih test predikcija: 64/64
 Istorijska ponavljanja u testu: 0/64
 Najduzi niz: 5; niz 5+: 1; dve zbijene polovine (opis, bez filtera): 1
-NEXT red 2974: 22,24,25,29,33,37,38
+NEXT red 2974: 22,x,25,y,33,z,38
 NEXT vec postoji u istoriji: False
 NEXT najduzi uzastopni niz: 2
 Na ovom testu model nije imao bolji prosek od kontrole.
 
-/Users/4c/Desktop/GHQ/data/loto7_4702_k82_loto_plus_1729.csv
+
+
+/data/loto7_4702_k82_loto_plus_1729.csv
 Redova: 1729; poslednja: 8,10,13,21,22,23,32
 Validacija 1: 1.3542
 Validacija 2: 1.3333
@@ -590,7 +594,7 @@ Distribucija pogodaka 0..7: [11, 29, 19, 4, 1, 0, 0, 0]
 Razlicitih test predikcija: 64/64
 Istorijska ponavljanja u testu: 0/64
 Najduzi niz: 4; niz 5+: 0; dve zbijene polovine (opis, bez filtera): 1
-NEXT red 1730: 2,5,9,10,18,24,34
+NEXT red 1730: 2,x,9,y,18,z,34
 NEXT vec postoji u istoriji: False
 NEXT najduzi uzastopni niz: 2
 """
